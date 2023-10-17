@@ -44,7 +44,7 @@ classDiagram
     Customer "1" --> "1..*" Sale : has
     Product "1" --> "1..*" Sale : includes
     Product "1" --> "1..*" Stock : recorded in
-    Product <-- SoldProduct : is sold
+    Stock <-- SoldProduct : is taken from
     Sale --> SoldProduct : contains
 
 ```
