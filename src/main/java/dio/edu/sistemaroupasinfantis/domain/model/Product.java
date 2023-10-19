@@ -14,7 +14,7 @@ public class Product {
     @PrimaryKeyJoinColumn
     private String code;
 
-    @Column(precision = 2, scale = 13)
+    @Column(precision = 6, scale = 2)
     private BigDecimal price;
     private String size;
     private String color;
