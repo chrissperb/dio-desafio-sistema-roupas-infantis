@@ -18,7 +18,7 @@ public class Sale {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<SoldProduct> soldProducts;
 
-    @Column(precision = 2, scale = 13)
+    @Column(precision = 13, scale = 2)
     private BigDecimal totalSale;
     private String paymentMethod;
     private String employee;
