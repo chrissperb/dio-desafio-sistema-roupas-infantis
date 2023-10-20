@@ -8,8 +8,17 @@ public abstract class BaseItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String code; // TODO: Change this variable to Product, create getters and setters for it
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Product product;
     private int quantity;
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
 
     public long getId() {
         return id;

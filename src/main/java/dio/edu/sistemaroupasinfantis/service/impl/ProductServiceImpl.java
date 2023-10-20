@@ -23,7 +23,6 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product create(Product productToCreate) {
-        // TODO: Create a CODE EXISTENCE verifying condition
         return productRepository.save(productToCreate);
     }
 }
