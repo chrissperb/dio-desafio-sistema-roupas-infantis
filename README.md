@@ -16,14 +16,14 @@ classDiagram
     class Product {
         -description: string
         -code: string
-        -price: float
+        -price: BigDecimal
         -size: string
         -color: string
         -category: string
     }
     
     class Stock {
-        -code: string
+        -product: Product
         -quantity: int
     }
     
@@ -37,7 +37,7 @@ classDiagram
     }
     
     class SoldProduct {
-        -code: string
+        -product: Product
         -quantity: int
     }
 

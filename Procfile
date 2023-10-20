@@ -1,0 +1,1 @@
+web: java -jar build/libs/sistema-roupas-infantis-0.0.1-SNAPSHOT.jar
