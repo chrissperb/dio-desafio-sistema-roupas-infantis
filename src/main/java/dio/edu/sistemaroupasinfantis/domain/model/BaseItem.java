@@ -8,7 +8,7 @@ public abstract class BaseItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String code;
+    private String code; // TODO: Change this variable to Product, create getters and setters for it
     private int quantity;
 
     public long getId() {
@@ -17,14 +17,6 @@ public abstract class BaseItem {
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
     }
 
     public int getQuantity() {
