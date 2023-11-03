@@ -19,14 +19,14 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Product> findById(@PathVariable Long id) {
-        var product = productService.findById(id);
+    public ResponseEntity<Product> findByProductId(@PathVariable Long id) {
+        var product = productService.findProductById(id);
         return ResponseEntity.ok(product);
     }
 
     @PostMapping
-    public ResponseEntity<Product> create(@RequestBody Product productToCreate) {
-        var productCreated = productService.create(productToCreate);
+    public ResponseEntity<Product> createProduct(@RequestBody Product productToCreate) {
+        var productCreated = productService.createProduct(productToCreate);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest()
                 .path("{id}")
                 .buildAndExpand(productCreated.getId())

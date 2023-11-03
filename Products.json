@@ -1,0 +1,42 @@
+[
+  {
+    "description": "Blusa feminina estampada",
+    "code": "0001",
+    "price": 10.99,
+    "size": "M",
+    "color": "Azul",
+    "category": "Borbolelala"
+  },
+  {
+    "description": "Bermuda masculina lisa",
+    "code": "0002",
+    "price": 19.99,
+    "size": "L",
+    "color": "Vermelho",
+    "category": "Adidas"
+  },
+  {
+    "description": "Cueca masculina Patrulha Canina",
+    "code": "0003",
+    "price": 5.99,
+    "size": "S",
+    "color": "Verde",
+    "category": "Guest"
+  },
+  {
+    "description": "Meia calça femina lisa",
+    "code": "0004",
+    "price": 9.99,
+    "size": "S",
+    "color": "cinza",
+    "category": "Borbolelala"
+  },
+  {
+    "description": "Casaco feminino Monster High",
+    "code": "0005",
+    "price": 45.99,
+    "size": "G",
+    "color": "Branco",
+    "category": "Guest"
+  }
+]

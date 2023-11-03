@@ -17,12 +17,12 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product findById(Long id) {
+    public Product findProductById(Long id) {
         return productRepository.findById(id).orElseThrow(NoSuchElementException::new);
     }
 
     @Override
-    public Product create(Product productToCreate) {
+    public Product createProduct(Product productToCreate) {
         return productRepository.save(productToCreate);
     }
 }
